@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>SignIn</title>
+<link rel="stylesheet" type="Text/css" href="Effect.css">
+</head>
+<body background="1.png">
+<h1 align="center">SIGN IN</h1>
+<div id="main">
+<form action="#" onSubmit="retun validation()">
+<table border="0" align="center">
+<tr>
+<tr><td>Name<td><input type="text" id="name" required>
+<br><span id="namee"></span></td></tr>
+
+<tr><td>Email<td><input type="email" required id="email">
+<br><span id="emaill"></span></td></tr>
+<tr><td>Phone Number<td><input type="number" required id="phone">
+<br><span id="numberr"></span></td></tr>
+<tr><td>Gender<td><input type="radio" name="g1">Male<input type="radio" name="g1">Female</td></tr>
+<tr><td>DOB<td><input type="date" required id="date">
+<br><span id="date"></span></td></tr>
+<tr><td>Password<td><input type="password" required id="pass">
+<br><span id="passs"></span></td></tr>
+<tr><td>Confirm Password<td><input type="password" required id="cpass">
+<br><span id="cpasss"></span></td></tr>
+<tr><td align="center" colspan="2"><a href="login.html"><input type="Submit" id= "btn"></td></tr>
+</table>
+</form>
+</div>
+<script type=text/javascript">
+ function validation()
+{
+   var name=document.getElementById('name').value;
+   if(name=="")
+{
+   document.getElementById('namee').innerHTML="*Please enter your name";
+}
+var pass=document.getElementById('pass').value;
+var cpass=document.getElementById('cpass').value;
+     if(pass!=cpass)
+{
+document.getElementById('cpassc').innerHTML="*Password need to be same";
+}
+}
+</script>
+</body>
+</html>
+
